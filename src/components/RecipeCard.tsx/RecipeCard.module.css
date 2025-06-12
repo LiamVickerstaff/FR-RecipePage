@@ -1,7 +1,7 @@
 .RecipeCard {
   width: clamp(375px, 80vw, 740px);
   background-color: var(--color-white);
-  margin-block-end: 40px;
+  margin-block-end: var(--size-500);
 }
 
 .RecipeTextContent {
@@ -85,7 +85,7 @@ ol {
 .IngredientsList li,
 .PreperationList li {
   position: relative;
-  padding-left: var(--size-500);
+  padding-inline-start: var(--size-500);
 }
 
 .IngredientsList li::before {
@@ -111,13 +111,13 @@ ol {
 .InstructionsList {
   list-style: none;
   counter-reset: step;
-  padding-left: 0;
+  padding-inline-start: 0;
 }
 
 .InstructionsList li {
   counter-increment: step;
   position: relative;
-  padding-left: var(--size-500);
+  padding-inline-start: var(--size-500);
 }
 
 .InstructionsList li::before {
