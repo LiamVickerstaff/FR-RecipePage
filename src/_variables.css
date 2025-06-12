@@ -1,0 +1,83 @@
+:root {
+  /* colors */
+  --color-rose-50: hsl(330deg, 100%, 98%);
+  --color-rose-800: hsl(332deg, 51%, 32%);
+  --color-stone-100: hsl(30deg, 54%, 90%);
+  --color-stone-150: hsl(30deg, 18%, 87%);
+  --color-stone-600: hsl(30deg, 10%, 34%);
+  --color-stone-900: hsl(24deg, 5%, 18%);
+  --color-brown-800: hsl(14deg, 45%, 36%);
+  --color-white: hsl(0deg, 0%, 100%);
+
+  --page-bg-color: var(--color-stone-100);
+  --card-bg-color: var(--color-white);
+  --prep-time-bg-color: var(--color-rose-50);
+
+  --title-text-color: var(--color-stone-900);
+  --subheading-text-color: var(--color-brown-800);
+  --prep-time-text-color: var(--color-rose-800);
+  --numbers-text-color: var(--color-brown-800);
+  --paragraph-text-color: var(--color-stone-600);
+  /* Sizings */
+
+  --size-100: 0.5rem;
+  --size-150: 0.75rem;
+  --size-200: 1rem;
+  --size-250: 1.25rem;
+  --size-300: 1.5rem;
+  --size-400: 2rem;
+  --size-500: 2.5rem;
+  --size-600: 3rem;
+  --size-1600: 8rem;
+
+  /* Typography */
+  --font-family-heading: "Young Serif", serif;
+  --font-line-height-heading: 100%;
+  --font-letter-spacing-heading: 0px;
+
+  --font-family-paragraph: "Outfit", sans-serif;
+  --font-line-height-paragraph: 150%;
+}
+
+.textPresetOne,
+.textPresetTwo,
+.textPresetThree {
+  line-height: var(--font-line-height-heading);
+  letter-spacing: var(--font-letter-spacing-heading);
+}
+
+.textPresetOne {
+  font-family: var(--font-family-heading);
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .textPresetOne {
+    font-size: var(--size-500);
+  }
+}
+
+.textPresetTwo {
+  font-family: var(--font-family-heading);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.textPresetThree {
+  font-family: var(--font-family-paragraph);
+  font-size: 1.25rem;
+}
+
+.textPresetFour,
+.textPresetFourBold {
+  font-family: var(--font-family-paragraph);
+  font-size: 1rem;
+  line-height: var(--font-line-height-paragraph);
+  letter-spacing: var(--font-letter-spacing-heading);
+  color: var(--color-stone-600);
+}
+
+.textPresetFourBold {
+  font-weight: 600;
+}

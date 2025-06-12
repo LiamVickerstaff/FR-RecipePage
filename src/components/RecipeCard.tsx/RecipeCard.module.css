@@ -1,0 +1,172 @@
+.RecipeCard {
+  width: clamp(375px, 80vw, 740px);
+  background-color: var(--color-white);
+  margin-bottom: 40px;
+}
+
+.RecipeTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-400);
+  padding: var(--size-300) var(--size-400);
+}
+
+.RecipeImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-stone-150);
+}
+
+.RecipeIntroSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-300);
+}
+
+.RecipeSummary {
+  color: var(--color-stone-600);
+}
+
+.PreperationGroup {
+  background-color: var(--color-rose-50);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-200);
+  padding: var(--size-300);
+  border-radius: var(--size-150);
+}
+
+.PreperationTitle {
+  color: var(--color-rose-800);
+}
+
+.SectionTitle {
+  color: var(--color-brown-800);
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+.PreperationList li::marker {
+  color: var(--color-rose-800);
+  font-size: 0.75rem;
+}
+
+.IngredientsGroup,
+.InstructionsGroup,
+.NutritionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-300);
+}
+
+.PreperationList,
+.IngredientsList,
+.InstructionsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-100);
+}
+
+.IngredientsList,
+.PreperationList {
+  list-style: none;
+  position: relative;
+}
+
+.IngredientsList li,
+.PreperationList li {
+  position: relative;
+  padding-left: var(--size-500);
+}
+
+.IngredientsList li::before {
+  content: "•";
+  font-size: var(--size-250);
+  color: var(--color-brown-800);
+  position: absolute;
+  left: var(--size-100);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.PreperationList li::before {
+  content: "•";
+  font-size: var(--size-250);
+  color: var(--color-rose-800);
+  position: absolute;
+  left: var(--size-100);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.InstructionsList {
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+}
+
+.InstructionsList li {
+  counter-increment: step;
+  position: relative;
+  padding-left: var(--size-500);
+}
+
+.InstructionsList li::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: var(--size-100);
+  font-size: var(--size-200);
+  font-weight: 600;
+  color: var(--color-rose-800);
+}
+
+.NutritionGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: var(--size-200);
+  row-gap: var(--size-150);
+}
+
+.GridPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: var(--size-400);
+}
+
+.GridItemBold {
+  color: var(--color-brown-800);
+}
+
+.GridSpanTwo {
+  grid-column: span 2;
+}
+
+@media (min-width: 640px) {
+  .RecipeCard {
+    padding: var(--size-500);
+    border-radius: var(--size-300);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-500);
+  }
+
+  .RecipeTextContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-400);
+    padding: 0;
+  }
+
+  .RecipeImage {
+    border-radius: var(--size-150);
+  }
+}
