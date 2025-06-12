@@ -12,11 +12,6 @@ export default function RecipeCard() {
           alt="Omelette dish with vegetables and meats"
         />
       </picture>
-      {/* <img
-        className={styles.RecipeImage}
-        src="/OmeletteImageTwo.png"
-        alt="Omelette dish with vegetables and meats"
-      /> */}
       <section className={styles.RecipeTextContent}>
         <section className={styles.RecipeIntroSection}>
           <h2 className={`${styles.RecipeTitle} textPresetOne`}>
@@ -29,9 +24,9 @@ export default function RecipeCard() {
           </p>
         </section>
         <section className={styles.PreperationGroup}>
-          <h4 className={`${styles.PreperationTitle} textPresetThree`}>
+          <h3 className={`${styles.PreperationTitle} textPresetThree`}>
             Preparation time
-          </h4>
+          </h3>
           <ul className={`${styles.PreperationList} textPresetFour`}>
             <li>
               <b>Total</b>: Approximately 10 minutes

@@ -1,7 +1,7 @@
 .RecipeCard {
   width: clamp(375px, 80vw, 740px);
   background-color: var(--color-white);
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 }
 
 .RecipeTextContent {
@@ -150,7 +150,7 @@ ol {
   grid-column: span 2;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .RecipeCard {
     padding: var(--size-500);
     border-radius: var(--size-300);

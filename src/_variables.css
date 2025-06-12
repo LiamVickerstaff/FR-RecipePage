@@ -52,7 +52,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   .textPresetOne {
     font-size: var(--size-500);
   }
